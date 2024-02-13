@@ -40,7 +40,7 @@ let h = 'рубило';
 let lengthWords = d.length + e.length + f.length + g.length + h.length
 console.log(lengthWords)
 
-// Zadacha 6?
+// Zadacha 6???
 
 // Zadacha 7
 let username = prompt('Как тебя зовут?')
