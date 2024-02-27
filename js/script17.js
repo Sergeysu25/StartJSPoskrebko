@@ -109,3 +109,7 @@
 
 // zadacha 1.3
 
+// let g1 = '#'
+// for (g1 = '#'; g1.length <= 6; g1 = g1 + '#') {
+//     console.log(g1);
+// }
