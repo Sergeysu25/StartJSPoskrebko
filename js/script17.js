@@ -39,7 +39,7 @@
 // let orange = true
 
 // let shouldGoToWork = 'Можем идти на работу с аппельсином!!!'
-// if (key = true && documents = true && pen = true && (apple = false || orange = true)) {
+// if (key == true && documents == true && pen == true && (apple == false || orange == true)) {
 //     console.log(shouldGoToWork);
 // }
 
