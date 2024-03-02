@@ -2,81 +2,114 @@
 
 // Zadacha 1
 
-// let num = prompt('Введите число!')
-// function getSum(num) {
+// function getSum(number5) {
 //     let sum1 = 0;
-//     for (let i = 1; i <= num; i++) {
+//     for (let i = 1; i <= number5; i++) {
 //       sum1 += i;
 //     }
 //     return sum1;
 // }
 
-// console.log(getSum(num));
-  
+// console.log(getSum(100));
+
 //Zadacha 2.
 
 // function sumPereplaty(sumKredita) {
 //     return sumKredita * 0.17 * 5
 // }
-// alert(`Сумма переплат составит - `+ sumPereplaty(10000));  
+// alert(`Сумма переплат составит - `+ sumPereplaty(prompt('Введите сумму кредита!')));
 
-// Задача 3.
-// Написать функцию trimString , которая в качестве аргумента принимает три
-// параметра:
-// строку
-// значение «от»
-// значение «по»
-// После вызова функция должна вернуть переданную строку, обрезанную по
-// значениям «от» и «по».
+//Zadacha 3.
+// function trimString(string1, num1, num2) {
+//     return string1.slice(num1, num2);
+// }
+// console.log(trimString('Делаю навесы под заказ качественно!!!!', 5, 22));
 
-function trimString(params) {
-    
-}
+//Zadacha 4.
 
-// Задача 4.
-// Написать функцию getSumNumbers . Она будет принимать число и вычислять
-// сумму цифр, из которых состоит число. Для 2021 это будет 5.
+// function getSumNumbers(number) {
+//     let str = String(number);
+//     let strSum = 0
+//     for (let i = 0; i < str.length; i++) {
+//         strSum += Number(str[i]);
+//     }
 
-
-// Задача 5.
-// 4. Функции4Написать функцию getSum , которая принимает два целых числа a и b, они могут
-// быть положительными или отрицательными, найти сумму всех чисел между
-// ними, включая их, и вернуть ее. Если два числа равны, верните a или b.
-// getSum(1, 0) == 1 // 1 + 0 = 1
-// getSum(1, 2) == 3 // 1 + 2 = 3
-// getSum(0, 1) == 1 // 0 + 1 = 1
-// getSum(1, 1) == 1 // 1 Since both are same
-// getSum(-1, 0) == -1 // -1 + 0 = -1
-// getSum(-1, 2) == 2 // -1 + 0 + 1 + 2 = 2
-// Задача 6.
-// Напишите функцию fooBoo которая принимает в качестве аргумента три
-// параметра:
-// булевое значение
-// функцию foo которая выводит в консоль свое имя
-// функцию boo которая выводит в консоль свое имя
-// Если переданное булевое значение true , то запускаем функцию foo, иначе boo.
-// let num = 0; 
-// while (num < 3) {
-//     console.log(`Число: ${num}`);
-//     num++
+//     return strSum
 // }
 
-// function showName() {
-//     console.log('Вася!');
-// }
-// setTimeout(showName, 0);
-// console.log('Коля!')
+// console.log(getSumNumbers(1234));
 
-// showMessage()
-// function showMessage() {
-//     console.log('Сообщение');
-// // }
-// if (2 > 1) {
-//     function showMessage() {
-//         console.log('Сообщение');
+// Zadacha 5.
+
+// function getSum(a, b) {
+//     if (a === b) {
+//         return a
+//     } else {
+//         let strSum = 0
+//         for (let i = a; i <= b; i++) {
+//             strSum += i;
+//         }
+
+//         return strSum
+//     }
+
+// }
+// console.log(getSum(-2, 1));
+
+// Zadacha 6.
+
+
+// function fooBoo(string, foo, Boo) {
+//     if (string) {
+//         return foo()
+//     } else {
+//         return Boo()
 //     }
 // }
-// showMessage();
 
+// function foo() {
+//     console.log('foo');
+// }
+// function boo() {
+//     console.log('boo');
+// }
 
+// console.log(fooBoo('code', foo, boo));
 
+// Zadacha 1.1
+
+// function treugol(a, b, c) {
+//     if (a + b > c) {
+//         console.log(true);
+//     } else {
+//         console.log(false);
+//     }
+// }
+// treugol(3, 4, 5)
+
+// Zadacha 1.2
+
+// function lomaemShokolad(a, b) {
+//     let c 
+//     if (a == Number, a > 0 , b == Number, b > 0) {
+//         return c = a - 1 + b - 1
+//     } else {
+//         return '0'
+//     }
+// }
+// alert('Ломаем шоколад ' + lomaemShokolad(30, 2) + ' раз!!!');
+
+// Zadacha 1.3
+
+// let cash = prompt('Введите сумму денег на счёте')
+// let nalog = prompt('Введите сумму налога')
+// let sumTelef = prompt('Введите стоимость телефона')
+// let sumAksesuarov = prompt('Введите стоимость аксессуара')
+
+// sum.toFixed(2)
+
+// function numTelef() {
+//     if
+// }
+
+// alert(numTelef())
