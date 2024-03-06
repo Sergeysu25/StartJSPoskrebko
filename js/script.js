@@ -40,7 +40,14 @@ let h = 'рубило';
 let lengthWords = d.length + e.length + f.length + g.length + h.length
 console.log(lengthWords)
 
-// Zadacha 6?
+// Zadacha 6
+ let number1 = 1
+ console.log(`${number1}: %number1% have type: %${typeof(number1)}%`)
+ let string1 = "text"
+ console.log(`${string1}: %string1% have type: %${typeof(string1)}%`)
+ let boolean1 = true
+ console.log(`${boolean1}: %boolean1% have type: %${typeof(boolean1)}%`)
+
 
 // Zadacha 7
 let username = prompt('Как тебя зовут?')
@@ -63,4 +70,3 @@ let codeWord4 = "липкие";
 let codeWord5 = "?!";
 
 console.log(codeWord1[1] + codeWord2[1] + codeWord3[1] + codeWord4[1] + codeWord5[1])
-
