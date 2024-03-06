@@ -91,10 +91,15 @@
 //         console.log(prompt('Неверное значение!!! Попробуйте ещё раз!(юг, север, запад, восток)'));
 // }
 
-// zadacha 1.1
-// let name1 = prompt('введите имя')
-// name2 = 'Привет, ' + (name1.toLowerCase());
-// alert(name2)
+// // zadacha 1.1
+// let name1 = 'пОлИнА нАбЕрЕжНаЯ'
+// let lower = name1.toLowerCase();
+// let upper0 = lower.slice(0,1);
+// let upper7 = lower.slice(7,8);
+// let lower1 = lower.slice(1,7);
+// let lower2 = lower.slice(8,17);
+// alert('Привет, ' + upper0.toUpperCase() + lower1.toLowerCase() + upper7.toUpperCase() + lower2.toLowerCase());
+
 
 // zadacha 1.2
 // let d1 = Number(prompt('введите число'))
