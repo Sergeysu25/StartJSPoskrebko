@@ -93,8 +93,7 @@
 
 // zadacha 1.1
 // let name1 = prompt('введите имя')
-// name2 = 'Привет, ' + (name1.toLowerCase())
-
+// name2 = 'Привет, ' + (name1.toLowerCase());
 // alert(name2)
 
 // zadacha 1.2
