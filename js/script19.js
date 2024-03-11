@@ -89,12 +89,78 @@
 
 // Zadacha 1.1
 
-// Мы на футбольном матче, счет забитых голов одной команды не может
-// превышать 9 мячей. Жаль что нам присылают результат матча в формате
-// «2:5», ведь нам надо это вывести в консоль словами. Давайте напишем
-// программу, которая будет за нас переводить формат и выводить результат в
-// консоль.
+// Мы на футбольном матче, счет забитых голов одной команды не может превышать 9 мячей. Жаль что нам присылают результат матча в формате «2:5», ведь нам надо это вывести в консоль словами. Давайте напишем программу, которая будет за нас переводить формат и выводить результат в консоль.
 
+// let count = prompt('Введите счет в формате a:b')
+
+// let formatedCount = { team1: count.split(":")[0], team2: count.split(":")[1] };
+
+// switch (formatedCount.team1) {
+//     case '0':
+//         formatedCount.team1 = 'Ноль'
+//         break;
+//     case '1':
+//         formatedCount.team1 = 'Один'
+//         break;
+//     case '2':
+//         formatedCount.team1 = 'Два'
+//         break;
+//     case '3':
+//         formatedCount.team1 = 'Три'
+//         break;
+//     case '4':
+//         formatedCount.team1 = 'Четыре'
+//         break;
+//     case '5':
+//         formatedCount.team1 = 'Пять'
+//         break;
+//     case '6':
+//         formatedCount.team1 = 'Шесть'
+//         break;
+//     case '7':
+//         formatedCount.team1 = 'Семь'
+//         break;
+//     case '8':
+//         formatedCount.team1 = 'Восемь'
+//         break;
+//     default:
+//         formatedCount.team1 = 'Девять'
+//         break;
+// }
+// switch (formatedCount.team2) {
+//     case '0':
+//         formatedCount.team2 = 'Ноль'
+//         break;
+//     case '1':
+//         formatedCount.team2 = 'Один'
+//         break;
+//     case '2':
+//         formatedCount.team2 = 'Два'
+//         break;
+//     case '3':
+//         formatedCount.team2 = 'Три'
+//         break;
+//     case '4':
+//         formatedCount.team2 = 'Четыре'
+//         break;
+//     case '5':
+//         formatedCount.team2 = 'Пять'
+//         break;
+//     case '6':
+//         formatedCount.team2 = 'Шесть'
+//         break;
+//     case '7':
+//         formatedCount.team2 = 'Семь'
+//         break;
+//     case '8':
+//         formatedCount.team2 = 'Восемь'
+//         break;
+//     default:
+//         formatedCount.team2 = 'Девять'
+//         break;
+// }
+
+// console.log(`${formatedCount.team1}:${formatedCount.team2}`);
 
 
 // Zadacha 1.2
