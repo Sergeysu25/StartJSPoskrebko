@@ -15,8 +15,7 @@
 // zadacha 3
 // const numbers = [5, 43, 63, 23, 90]
 // console.log(numbers);
-// console.log(numbers.splice(1, 0)); //?
-// console.log(numbers.slice(1, 0));  //?
+// console.log(numbers.splice(0, 5)); //?
 // numbers.length = 0;
 // console.log(numbers);
 
@@ -82,20 +81,27 @@
 
 
 // Задача 1.
-// Реализуйте функцию, которая будет проверять, является ли слово
-// палиндромом.
+// Реализуйте функцию, которая будет проверять, является ли слово палиндромом.
 
 // zadacha1.1 
 
-
-// const slovo = 'кабак';
-
-// const slovoRevers = 
+// let word = prompt('Введите слово для проверки');
+// console.log(word);
+// function palindrom() {
+//     let wordReverse = word.split("").reverse().join("");
+//     console.log(wordReverse);
+//     if (word === wordReverse) {
+//         console.log('Слово палиндром');
+//     } else {
+//         console.log('Слово не палиндром');
+//     }
+// }
+// palindrom(word)
 
 
 // Выведите в консоль среднее значение чисел в многомерном массиве.
 
-// zadacha1.2 
+// zadacha1.2
 
 // const matrix = [
 //     [12, 98, 78, 65, 23],
@@ -104,41 +110,50 @@
 //     [9092, 22, 45, 90000],
 // ]
 
-// console.log(matrix[0]);
-// console.log(matrix[1]);
-// console.log(matrix[2]);
-// console.log(matrix[3]);
-
-
-// const matrix = [1, 2, 5, 6]
-
-
 // const getAverage = (matrix) => {
-//   let sum = 0; // объявляем переменную, в которой будет храниться сумма всех чисел массива
-//   for (let i = 0; i < matrix.length; i += 1) { // инициализируем цикл
-//     sum += matrix[i]; // на каждой итерации прибавляем к сумме значение текущего элемента массива
-//   }
-//   return sum / matrix.length; // возвращаем среднее арифметическое
+//     let sum = 0;
+//     let sumLength = 0
+//     for (let i = 0; i < matrix.length; i ++) {
+//         for (let j = 0; j < matrix[i].length; j ++) {
+//             sum += matrix[i][j];
+//         }
+//         sumLength += matrix[i].length
+//     }
+//     console.log(sum);
+//     console.log(sumLength);
+//     return sum / sumLength; 
 // };
 
-// console.log(getAverage(matrix)); // => 6
+// console.log(getAverage(matrix)); 
 
 
 // Задача 3.
 // Дан массив:
 // const mixedNumbers = [-14, 24, -89, 43, 0 , -1, 412, 4]
-// Создайте два массива, в один поместите все положительные числа включая 0,
-// в другой все отрицательные. Оба массива затем выведите в консоль.
+// Создайте два массива, в один поместите все положительные числа включая 0, в другой все отрицательные. Оба массива затем выведите в консоль.
 
 
 // zadacha1.3
 
-// const mixedNumbers = [-14, 24, -89, 43, 0 , -1, 412, 4]
+const mixedNumbers = [-14, 24, -89, 43, 0, -1, 412, 4]
 
+let arr1 
+let arr2
+console.log(arr1);
+console.log(arr2);
 
+function array() {
+    for (let i = 0; i < mixedNumbers.length; i++) {
+        const element = mixedNumbers[i];
+        if (element >= 0) {
+            return arr1.push();
+        } else {
+            return arr2.push();
+        }
+    }
+
+};
+array();
 
 // Задача 4.
-// Создать массив длинной не менее 5, из динамически созданных случайных
-// чисел. Далее написать алгоритм, который берет все числа из исходного
-// массива, возводит их в куб и записывает в новый массив. В конце вывести оба
-// массива в консоль.
+// Создать массив длинной не менее 5, из динамически созданных случайных чисел. Далее написать алгоритм, который берет все числа из исходного массива, возводит их в куб и записывает в новый массив. В конце вывести оба массива в консоль.
