@@ -57,19 +57,18 @@
 //         console.log('Buz');
 //     }
 
-// zadacha 6
+// // zadacha 6
 // let v = Number(prompt('введите возраст'))
 // console.log(v);
-//     if (v >= 18 ) {
-//         console.log('Попей пивка');
-//     }
+// if (v >= 18) {
+//     console.log('Попей пивка');
+// }
 
-//     else if (v < 18) { 
-//         console.log('Пей колу');
-//         if(v >=16) {
-//             console.log('Можешь выкурить сигаретку, только маме не говори ');
-//         }
-//     }  
+// else if (v < 16) {
+//     console.log('Пей колу');
+// } else {
+//     console.log('Можешь выкурить сигаретку, только маме не говори ');
+// }
 
 // zadacha 7
 
