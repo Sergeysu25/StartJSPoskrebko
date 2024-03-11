@@ -135,25 +135,33 @@
 
 // zadacha1.3
 
-const mixedNumbers = [-14, 24, -89, 43, 0, -1, 412, 4]
+// const mixedNumbers = [-14, 24, -89, 43, 0, -1, 412, 4]
+// let arr1 = [];
+// let arr2 = [];
 
-let arr1 
-let arr2
-console.log(arr1);
-console.log(arr2);
-
-function array() {
-    for (let i = 0; i < mixedNumbers.length; i++) {
-        const element = mixedNumbers[i];
-        if (element >= 0) {
-            return arr1.push();
-        } else {
-            return arr2.push();
-        }
-    }
-
-};
-array();
+// function array() {
+//     for (let i = 0; i < mixedNumbers.length; i++) {
+//         if (mixedNumbers[i] >= 0) {
+//             arr1.push(mixedNumbers[i]);
+//         } else {
+//             arr2.push(mixedNumbers[i]);
+//         }
+//     }
+// };
+// array();
+// console.log(arr1);
+// console.log(arr2);
 
 // Задача 4.
 // Создать массив длинной не менее 5, из динамически созданных случайных чисел. Далее написать алгоритм, который берет все числа из исходного массива, возводит их в куб и записывает в новый массив. В конце вывести оба массива в консоль.
+
+
+// let arr = [];
+// let arrX = [];
+
+// for (let i = 0; i < 6; i++) {
+//     arr.push(Math.trunc(Math.random()*100));
+//     arrX.push(arr[i]**3)
+// }
+// console.log(arr);
+// console.log(arrX);
