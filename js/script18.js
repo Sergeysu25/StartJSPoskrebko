@@ -115,10 +115,12 @@
 
 // function sumPokupki() {
 
-//     if (cash < sumTelef + sumNalogTelef) {
+//     if (cash - (sumTelef + sumNalogTelef) < 0) {
 //         alert('Не хватает денег на счете!!!');
-//     } else if (cash <= sumTelef + sumNalogTelef + sumAksesuarov + sumNalogAksessuarov) {
+//     } else if (cash - (sumTelef + sumNalogTelef + sumAksesuarov + sumNalogAksessuarov) >= 0) {
 //         alert(`Сумма покупки -`+ `${sumTelef + sumNalogTelef + sumAksesuarov + sumNalogAksessuarov}`);
+//     } else {
+//         alert('Не хватает денег на счете!!!');
 //     }
 
 // }
