@@ -112,17 +112,36 @@
 // C - неплохой рейтинг и мы можем дать человеку кредит как 6 его зарплат
 // D - плохой рейтинг и мы не можем дать кредит
 
-// function Student(name) {
-//     this.salary = salary;
-//     this.rate = rate;
-//     this.name = name;
-//   }
-  
-//   let user = new Student("Jack");
-  
-// let 
+// function Student(name, salary, rate) {
+//   this.salary = salary;
+//   this.rate = rate;
+//   this.name = name;
 
-  // Задача 2.-
+//   function sumCredit() {
+//     if (rate = "A"){
+//     return sumCredit = 12 * salary
+//   }
+//   if (rate = "B"){
+//     return sumCredit = 9 * salary
+//   }
+//   if (rate = "C"){
+//     return sumCredit = 6 * salary
+//   }
+//   if (rate = "D"){
+//     return sumCredit = 0 * salary
+//   }
+// console.log(sumCredit);
+// }}
+
+// let user = new Student("Сергей", 10000, "A");
+// // let user = new Student("Андрей", 9000, "B");
+// // new Student("Глеб", 11000, "A");
+// // new Student("Антон", 7000, "D");
+// // new Student("Виктория", 7500, "С");
+// console.log(user);
+
+
+// Задача 2.+
 // Тролли атакуют наш раздел с комментариями!!!
 // Единственный способ справиться с этой ситуацией - удалить все гласные из комментариев троллей, нейтрализуя угрозу.
 // Ваша задача - написать функцию, которая принимает строку и возвращает новую строку с удаленными гласными.
@@ -130,10 +149,15 @@
 // Примечание: для этой задачи y не считается гласной.
 
 
+// function stringWithout(str) {
+//   let vowels = ['а', 'е', 'и', 'о', 'у', 'э', 'ю', 'я'];
+//   let strWithoutVowels = str.split('').map(el => vowels.includes(el.toLowerCase()) ? el = '' : el)
+//   console.log(strWithoutVowels.join('')); 
+// }
 
+// stringWithout('ПрИвет СергЕй')
 
-
-// Задача 3.-
+// Задача 3.+
 // Нет истории, нет теории
 // В приведенных ниже примерах показано, как написать функцию:
 // accum('abcd') // -> 'A-Bb-Ccc-Dddd'
@@ -142,20 +166,50 @@
 // Параметр — это строка, которая включает только буквы от a...z и A...Z.
 
 
-// Задача 4.-
+// function accum(str) {
+//   let strWithoutVowels = str.split('').map(el => el.toUpperCase())
+//   let cloneCount = 0; 
+//   let arr = []
+//   for(let i = 0; i < strWithoutVowels.length; i++){
+//       let arrayWithCorrectLetter = Array(cloneCount).fill(strWithoutVowels[i].toLowerCase())
+//       arrayWithCorrectLetter.unshift(strWithoutVowels[i].toUpperCase())
+//       cloneCount ++;
+//       arr.push(arrayWithCorrectLetter.join(''))
+//   }
+//   console.log(arr.join('-')) 
+// }
+// accum('cwAt');
+
+// Задача 4.+
 // Самый высокий и самый низкий
 // В этом небольшом задании вам дается строка чисел, разделенных пробелами, и вы должны возвращать наибольшее и наименьшее число.
-// highAndLow('1 2 3 4 5') // return '5 1'
+// highAndLow = ('1 2 3 4 5') // return '5 1'
 // highAndLow('1 2 -3 4 5') // return '5 -3'
 // highAndLow('1 9 3 4 -5') // return '9 -5'
 // Строка вывода должна состоять из двух чисел, разделенных одним пробелом, при этом наибольшее число должно быть первым.
 
-// Задача 5.-
+
+
+// let highAndLow = ('1 2 3 4 5') // return '5 1'
+// let highAndLow = ('1 2 -3 4 5') // return '5 -3'
+// let highAndLow = ('1 9 3 4 -5') // return '9 -5'
+// let arrHighAndLow = highAndLow.split(' ')
+// const maxValue = Math.max(...arrHighAndLow)
+// const minValue = Math.min(...arrHighAndLow)
+// console.log(`'${maxValue} ${minValue}'`)
+
+
+
+// Задача 5.+-
 // Изограммы
 // Изограмма - это слово, в котором нет повторяющихся букв, последовательных или непоследовательных. Реализуйте функцию, которая определяет, является ли строка, содержащая только буквы, изограммой. Предположим, что пустая строка является изограммой. Регистр букв мы игнорируем.
 // isIsogram("Dermatoglyphics") == true
 // isIsogram("aba") == false
 // isIsogram("moOse") == false // -- ignore letter case
+
+// let isIsogram = (str) => (str.toLowerCase().split("").every((c, i) => str.indexOf(c) == i));
+
+// console.log(isIsogram("moOse"));
 
 
 // Задача 6.-
